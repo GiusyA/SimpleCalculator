@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Calculator</h1>
+        <div id="showCalcul"></div>
+
+        <div class="calculator">
+            <button type="button" onclick="addElementToCalcul('7')">7</button>
+            <button type="button" onclick="addElementToCalcul('8')">8</button>
+            <button type="button" onclick="addElementToCalcul('9')">9</button>
+
+            <button type="button" onclick="clearCalcul()">CLR</button>
+            <button type="button" onclick="removeElementFromCalcul()">BACK</button>
+
+            <button type="button" onclick="addElementToCalcul('4')">4</button>
+            <button type="button" onclick="addElementToCalcul('5')">5</button>
+            <button type="button" onclick="addElementToCalcul('6')">6</button>
+
+            <button type="button" onclick="addOperation('+')">+</button>
+            <button type="button" onclick="addNegationOrSubstraction()">-</button>
+
+            <button type="button" onclick="addElementToCalcul('1')">1</button>
+            <button type="button" onclick="addElementToCalcul('2')">2</button>
+            <button type="button" onclick="addElementToCalcul('3')">3</button>
+
+            <button type="button" onclick="addOperation('*')">*</button>
+            <button type="button" onclick="addOperation('/')">/</button>
+
+            <button type="button" onclick="addElementToCalcul('0')">0</button>
+            <button type="button" onclick="addElementToCalcul('.')">.</button>
+
+            <button type="button" id="equal" onclick="extractNumbersAndCalculate()">=</button>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
